@@ -1,8 +1,8 @@
 public class Auto {
     public String marka;
     public String model;
-    public int rok;
-    public int przebieg;
+    public Integer rok;
+    public Integer przebieg;
 
     public void jedz(){
         System.out.println("Jedz!");
