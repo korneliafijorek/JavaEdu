@@ -1,12 +1,18 @@
 public class StudentChecker {
 
     public static void main(String[] args) {
+
+        String uczelnia = Student.nazwaUczelni;
+        Student.infoUczelnia();
+
         Student student1 = new Student();
         student1.imie = "Patryk";
         student1.nazwisko = "Kowalski";
         student1.email = "patrykk@gmail.com";
         student1.nick = "patrykk";
         student1.numerIndeksu = 12345;
+        String uczelniaPatryka = student1.nazwaUczelni;
+        student1.infoUczelnia();
 
         Student student2 = new Student();
         student2.imie = "Adam";
@@ -36,6 +42,7 @@ public class StudentChecker {
             studenci[i].podajEmail();
             System.out.println();
         }
+
 
 
 

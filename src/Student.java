@@ -5,6 +5,7 @@ public class Student {
     public String nick;
     public String email;
     public int numerIndeksu;
+    public static String nazwaUczelni = "PG po zmianie";
 
     public void przedstawSie(){
         System.out.println("Nazywam się " + imie + " " + nazwisko);
@@ -20,5 +21,13 @@ public class Student {
 
     public void podajEmail(){
         System.out.println("Moj email to: " + email);
+    }
+
+    public static void infoUczelnia(){
+        System.out.println("Moja uczelnia to " + nazwaUczelni);
+        drugaMetoda();
+    }
+    public static void drugaMetoda(){
+        System.out.println("Jestem drugą metodą");
     }
 }
