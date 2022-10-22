@@ -8,14 +8,17 @@ public class ExeptionCheck {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wiek...");
         int age = scanner.nextInt();
+
         if (age < 0){
             try {
-                throw new ValidAgeValue("Podałeś ujemną liczbę!");
-            } catch (ValidAgeValue e) {
+                throw new InvalidAgeExeption("Your age is not valid!");
+            } catch (InvalidAgeExeption e) {
                 throw new RuntimeException(e);
             }
         }else if(age >= 18){
-            System.out.println("Jesteś pełnoletni!");
+            System.out.println("You are a adult!");
+        } else {
+            System.out.println("You are a child!");
         }
 
     }
